@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>(not)Idle Simulator</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      require("./renderer.js");
+    </script>
+  </head>
+  <body>
+    <h1>💖 Hallo Pascal!</h1>
+    <p>Bitte gebe deine Werte ein und starte.</p>
+
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100"></progress>
+
+    <button onClick="setBar(0);">0%</button>
+    <button onClick="setBar(20);">20%</button>
+    <button onClick="setBar(40);">40%</button>
+    <button onClick="setBar(60);">60%</button>
+    <button onClick="setBar(80);">80%</button>
+    <button onClick="setBar(100);">100%</button>
+    <div id="bar-container">
+      <div id="bar"></div>
+    </div>
+  </body>
+</html>
